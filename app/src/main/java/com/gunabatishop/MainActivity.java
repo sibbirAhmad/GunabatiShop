@@ -41,9 +41,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         MyFunc.initSP(MainActivity.this);
-        if(!isAppOk){
+//        if(!isAppOk){
+//            MyFunc.securityError(MainActivity.this,null,null);
+//
+//        }
+        if(MyFunc.getSP(SpKey.APP_URL, "")==""){
             MyFunc.securityError(MainActivity.this,null,null);
-
         }
 
         //checkNightMode();

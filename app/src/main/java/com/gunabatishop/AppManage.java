@@ -78,7 +78,7 @@ public class AppManage {
                 String dd = MyDS.dx(context.getString(R.string.app_ss),null);
                 svData(dd);
                 MyFunc.putSP(SpKey.VERSION_CHECK_KEY,appVersion+"");
-                Toast.makeText(context, "Welcome", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "Welcome", Toast.LENGTH_SHORT).show();
 
             }
             isAppOk = true;
@@ -92,7 +92,7 @@ public class AppManage {
             //-----------------Log.d(TAG, "checkAppHealth: "+dd);
              svData(dd);
 
-        };
+        }
     }
 
 }
